@@ -39,6 +39,8 @@ const clearCart = () => {
     clearButton.addEventListener('click', () => {
       carItems.innerHTML = '';
       price.innerHTML = '';
+      localStorage.removeItem('carList');
+      localStorage.removeItem('totalPrice');
   });
 };
 
