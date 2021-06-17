@@ -4,19 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Shopping Cart Project</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <header id="navbar">
+      <h1>Shopping Cart Project</h1>
+      <input placeholder="Pesquisar" type="text" name="search" id="search">
+    </header>
+
     <section class="container">
       <section class="items"></section>
-      <section class="cart">
-        <span class="cart__title">Carrinho de compras</span>
-        <button class="empty-cart">Esvaziar carrinho</button>
-        <ol class="cart__items"></ol>
-        <span class="total-price"></span>
-      </section>
+      <div class="cart-list">
+        <section class="cart">
+          <span class="cart__title">Carrinho de compras</span>
+          <ol class="cart__items"></ol>
+          <span class="total-price"></span>
+          <button class="empty-cart">Esvaziar carrinho</button>
+
+        </section>
+      </div>
+      
     </section>
     <script src="script.js"></script>
 
