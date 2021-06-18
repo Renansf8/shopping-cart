@@ -129,6 +129,8 @@ body {
     flex-flow: column wrap;
     margin-right: 24px;
     border: 1px solid #555555;
+    padding: 8px;
+    font-family: 'Raleway', sans-serif;
   }
 
   .cart-list {
@@ -143,6 +145,12 @@ body {
     flex-basis: 1;
     font-size: 16pt;
     text-align: center;
+    font-weight: 600;
+  }
+
+  .total-price {
+    text-align: center;
+    margin-bottom: 8px;
   }
 
   .empty-cart {
