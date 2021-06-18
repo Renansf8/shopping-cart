@@ -14,12 +14,54 @@ body {
     margin-bottom: 10px;
     width: 100%;
     background-color: #1b8efa;
-    font-family: 'Fjalla One', sans-serif;
   }
 
-  #navbar h1 {
+  .title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .title-container h1 {
     font-weight: 600;
     color: #2e2b2b;
+  }
+
+  .title-container i {
+    font-size: 32px;
+    margin-right: 16px;
+    color: #2e2b2b;
+  }
+
+  .search-container {
+    display: flex;
+  }
+
+  .search-container input {
+    padding: 4px 6px;
+    width: 180px;
+    margin: 0;
+    border: 0;
+    font-size: 14px;
+    font-family: 'Fjalla One', sans-serif;
+    border-radius: 6px 0 0 6px;
+  }
+
+  .search-container input:focus {
+    outline: 0;
+  }
+
+  .search-container button {
+    margin: 0;
+    border: 0;
+    background-color: #d5d9df;
+    height: 28px;
+    width: 32px;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .search-container i {
+    color: #1b8efa;
   }
   
   .top-bar .input-name-group {
@@ -46,7 +88,7 @@ body {
   }
   
   .item {
-    border: 2px solid blue;
+    border: 2px solid #1b8efa;
     border-radius: 5px;
     box-sizing: border-box;
     display: flex;
@@ -54,6 +96,7 @@ body {
     height: auto;
     margin: 5px;
     width: 200px;
+    font-family: 'Raleway', sans-serif;
   }
   
   .item .item__sku {
@@ -71,11 +114,13 @@ body {
   }
   
   .item .item__add {
-    background-color: green;
+    background-color: #1b8efa;
     border: 0;
     cursor: pointer;
     margin: 0;
     padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
   }
   
   .cart {
