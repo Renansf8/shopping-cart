@@ -1,10 +1,67 @@
-.top-bar {
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#navbar{
     align-items: center;
     display: flex;
-    height: 100px;
+    height: 80px;
     justify-content: space-around;
     margin-bottom: 10px;
     width: 100%;
+    background-color: #1b8efa;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .title-container h1 {
+    font-weight: 600;
+    color: #2e2b2b;
+  }
+
+  .title-container i {
+    font-size: 32px;
+    margin-right: 16px;
+    color: #2e2b2b;
+  }
+
+  .search-container {
+    display: flex;
+  }
+
+  .search-container input {
+    padding: 4px 6px;
+    width: 180px;
+    margin: 0;
+    border: 0;
+    font-size: 14px;
+    font-family: 'Fjalla One', sans-serif;
+    border-radius: 6px 0 0 6px;
+  }
+
+  .search-container input:focus {
+    outline: 0;
+  }
+
+  .search-container button {
+    margin: 0;
+    border: 0;
+    background-color: #d5d9df;
+    height: 28px;
+    width: 32px;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .search-container i {
+    color: #1b8efa;
   }
   
   .top-bar .input-name-group {
@@ -31,7 +88,7 @@
   }
   
   .item {
-    border: 2px solid blue;
+    border: 2px solid #1b8efa;
     border-radius: 5px;
     box-sizing: border-box;
     display: flex;
@@ -39,6 +96,7 @@
     height: auto;
     margin: 5px;
     width: 200px;
+    font-family: 'Raleway', sans-serif;
   }
   
   .item .item__sku {
@@ -56,17 +114,29 @@
   }
   
   .item .item__add {
-    background-color: green;
+    background-color: #1b8efa;
     border: 0;
     cursor: pointer;
     margin: 0;
     padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
   }
   
   .cart {
     display: flex;
     flex-basis: 30%;
     flex-flow: column wrap;
+    margin-right: 24px;
+    border: 1px solid #555555;
+  }
+
+  .cart-list {
+    width: 400px;
+  }
+
+  .cart__item {
+    margin: 8px 0;
   }
   
   .cart .cart__title {
@@ -74,4 +144,17 @@
     font-size: 16pt;
     text-align: center;
   }
-  
+
+  .empty-cart {
+    background-color: #fa741b;
+    border: 0;
+    border-radius: 6px;
+    padding: 6px; 
+    font-size: 16px; 
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+
+  .empty-cart:hover {
+    background-color: #d35a09;
+  }
