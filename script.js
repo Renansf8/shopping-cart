@@ -31,7 +31,7 @@ const totalPrice = [];
 
 const totalCalc = () => {
   const total = totalPrice.reduce((acc, curr) => acc + curr, 0);
-  document.querySelector('.total-price').innerText = `Preço total: ${total}`;
+  document.querySelector('.total-price').innerHTML = `Preço total: <strong>${total}<strong>`;
 };
 
 const clearCart = () => {
