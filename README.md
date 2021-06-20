@@ -7,4 +7,4 @@ Foi desenvolvido com o objetivo de aplicar todo o conhecimento adquirido de em H
   - Utilizar o web storage;
   - Utilizar Javascript assíncrono.
   
-![Image](file:///home/renansf/Imagens/shopping-cart.png)
+  ![shopping-cart](https://user-images.githubusercontent.com/60987449/122688078-7a59e500-d1f0-11eb-9bbf-99645bb8aefc.png)
